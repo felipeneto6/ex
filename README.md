@@ -1,0 +1,2 @@
+# ex
+ ex de portifólio
