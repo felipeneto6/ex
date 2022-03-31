@@ -72,6 +72,16 @@ p {
     background-color: crimson;
 }
 
+.brand h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.brand h1 span {
+    color: crimson;
+}
+
 
 /* Hero section */
 
@@ -414,6 +424,57 @@ p {
 }
 
 /* End Contact section*/
+
+/*Footer*/
+
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+#footer .social-item img {
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+
+#footer .social-item:hover img{
+    filter: grayscale(0);
+}
+
+#footer p{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+/* End Footer*/
+
+
 /* keyframes */
 
 @keyframes text_reveal_box{
@@ -439,3 +500,56 @@ p {
 }
 
 /* end keyframes */
+
+/* Media query fot tablet */
+
+@media only screen and (min-width:768px) {
+    .cta {
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title {
+        font-size: 6rem;
+    }
+
+    /*hero*/
+    #hero h1 {
+        font-size: 7rem;
+    }
+    /*hero*/
+
+    /* Service Section */
+    #services .services-bottom .services-item {
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    /* End Service Section */
+
+    /* Project */
+
+    #projects .projects-item {
+        flex-direction: row;
+    }
+
+    #projects .projects-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    #projects .projects-item {
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #projects .all-projects .projects-info {
+        height: 100%;
+    }
+
+    #projects .all-projects .projects-img {
+        height: 100%;
+    }
+    /* End Project */
+}
+
+/* End Media query fot tablet */
