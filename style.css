@@ -229,10 +229,11 @@ p {
 /* Hero section */
 
 #hero{
-    background-image: url(./imagem/fundo.jpg);
+    background: #393741;
     background-size: cover;
     background-position: top center;
     position: relative;
+    
 }
 
 #hero::after{
